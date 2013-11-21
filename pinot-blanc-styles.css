@@ -204,71 +204,43 @@ textarea {
     margin-bottom: 1rem;
 }
 
-.page-container {}
-
-    .page-container .button.slick {
-        border-color: #495b67;
-        color: #495b67;
-    }
-
-    .page-container .button.slick:hover {
-        color: #fff;
-    }
-
-    .page-container .button.slick:after {
-        background: #495b67;
-    }
-
-.page-container.blue {
-    background: #495b67;
+.page-container.colored-stripe {
+    background: {{ site_settings.primary_accent_color }};
     color: #fff;
 }
 
-    .page-container.blue .button.slick {
-        border-color: #fff;
-        color: #fff;
-    }
-
-    .page-container.blue .button.slick:after {
-        background: #fff;
-    }
-
-    .page-container.blue .button.slick:hover {
-        color: #495b67;
-    }
-
-.page-container.blue > .row-fluid-wrapper {
+.page-container.colored-stripe > .row-fluid-wrapper {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 @media (max-width: 1024px) {
-    .page-container.blue > .row-fluid-wrapper {
+    .page-container.colored-stripe > .row-fluid-wrapper {
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
 }
 
 @media (max-width: 568px) {
-    .page-container.blue > .row-fluid-wrapper {
+    .page-container.colored-stripe > .row-fluid-wrapper {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
 }
 
-.page-container.blue h2:first-child {
+.page-container.colored-stripe h2:first-child {
     margin-top: 0;
     margin-bottom: -0.1rem;
     line-height: 0.75rem;
 }
 
-.page-container.blue p:first-child {
+.page-container.colored-stripe p:first-child {
     margin-top: 0;
 }
 
-.page-container.blue p:last-child,
-.page-container.blue ul:last-child,
-.page-container.blue attribution:last-child {
+.page-container.colored-stripe p:last-child,
+.page-container.colored-stripe ul:last-child,
+.page-container.colored-stripe attribution:last-child {
     margin-bottom: 0;
 }
 
@@ -312,123 +284,6 @@ body {
     body {
         margin-top: 1rem;
     }
-}
-
-/* Forms */
-
-.hs-form.stacked {
-    display: none;
-}
-
-.hs-form.stacked { *zoom: 1; }
-.hs-form.stacked:before, .hs-form.stacked:after { display: table; content: ""; }
-.hs-form.stacked:after { clear: both; }
-
-.hs-form.stacked.form-loaded {
-    display: block;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs-form.stacked {
-    position: relative;
-    overflow: hidden;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs-form-field {
-    float: left;
-    width: 25%;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs_firstname input,
-.hs_cos_wrapper_type_blog_subscribe .hs_lastname input {
-    display: block;
-    border-right-width: 0;
-    box-shadow: 0 2px rgba(189, 195, 199, 0);
-    -webkit-transition: border .25s linear, color .25s linear, box-shadow .25s linear;
-    -moz-transition: border .25s linear, color .25s linear, box-shadow .25s linear;
-    -o-transition: border .25s linear, color .25s linear, box-shadow .25s linear;
-    transition: border .25s linear, color .25s linear, box-shadow .25s linear;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs_firstname input:focus,
-.hs_cos_wrapper_type_blog_subscribe .hs_lastname input:focus {
-    box-shadow: 2px 0 #70C2B5;
-    z-index: 1;
-    position: relative;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs-form-field.hs_email {
-    width: 50%;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs-form-field.hs_email input {
-    padding-right: 35%;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs-form.stacked .hs-form-field input {
-    border-radius: 0;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .hs-button.primary.large {
-    position: absolute;
-    right: 0;
-    width: 16%;
-    top: 0;
-    bottom: 0;
-}
-
-.hs_cos_wrapper_type_blog_subscribe .form-title {
-    display: none;
-}
-
-@media (max-width: 568px) {
-    .hs_cos_wrapper_type_blog_subscribe .hs-form-field {
-        width: 50%;
-    }
-
-    .hs_cos_wrapper_type_blog_subscribe .hs-form-field.hs_email {
-        width: 65%;
-        clear: left;
-        margin-top: -2px;
-    }
-
-    .hs_cos_wrapper_type_blog_subscribe .hs-form-field.hs_email input {
-        padding-right: 0.25rem;
-    }
-
-    .hs_cos_wrapper_type_blog_subscribe .hs_lastname input {
-        border-right-width: 2px;
-        box-shadow: none;
-    }
-
-    .hs_cos_wrapper_type_blog_subscribe .hs-button.primary.large {
-        top: 49%;
-        width: 36%;
-    }
-}
-
-#blog-comment-form .hs-form-field {
-    margin-top: -2px;
-}
-
-#blog-comment-form .hs-form-field:first-child {
-    margin-top: 0;
-}
-
-#blog-comment-form input, #blog-comment-form textarea {
-    border-radius: 0;
-}
-
-#blog-comment-form textarea {
-    height: 2.4rem;
-}
-
-#blog-comment-form .hs-button.primary {
-    padding: .25rem .5rem;
-}
-
-#blog-comment-form input:focus, #blog-comment-form textarea:focus {
-    z-index: 1;
-    position: relative;
 }
 
 body .hs-common-confirm-message {
