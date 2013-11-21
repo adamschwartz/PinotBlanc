@@ -615,3 +615,22 @@ body .hsformerror .close-form-error {
     height: 100%;
     border: 0;
 }
+
+/* Global Groups and Modules */
+
+.logo-container {
+    text-align: center;
+    margin: 1em 0 2em;
+}
+
+.about-container {
+    background: {{ site_settings.secondary_accent_color }};
+    padding: .1rem .75rem;
+    margin-top: 1rem;
+}
+
+/* Temporary Hacks */
+
+#comment-form {
+    display: none;
+}
