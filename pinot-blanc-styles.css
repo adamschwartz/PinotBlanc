@@ -59,7 +59,7 @@ body {
     font-size: 0.5rem;
     line-height: 0.93rem;
     background: #fff;
-    color: {{ site_settings.primary_font_color }};
+    color: #444; /* site_settings.primary_font_color */
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
 }
@@ -167,7 +167,7 @@ textarea {
 
 .hs-button.primary {
     border: 0;
-    background: {{ site_settings.primary_accent_color }};
+    background: #eee; /* site_settings.primary_accent_color */
     color: #fff;
     -webkit-appearance: none;
     border-radius: 0;
@@ -180,7 +180,7 @@ textarea {
 }
 
 .hs-button.primary:hover, .hs-button.primary:active {
-    background: {{ site_settings.primary_accent_color }};
+    background: #eee; /* site_settings.primary_accent_color */
 }
 
 .button, .button:hover, .button:active,
@@ -211,7 +211,7 @@ textarea {
 }
 
 .page-container.colored-stripe {
-    background: {{ site_settings.primary_accent_color }};
+    background: #eee; /* site_settings.primary_accent_color */
     color: #fff;
 }
 
@@ -324,7 +324,7 @@ ul.blog-post-list li {
 .widget-type-post_listing a:visited,
 .widget-type-post_filter a:visited,
 .blog-post-list a:visited {
-    color: {{ color_variant(site_settings.primary_accent_color, 30) }};
+    color: #aaa; /* color_variant(site_settings.primary_accent_color, 30) */
 }
 
 .widget-type-post_listing a:visited:before,
@@ -339,12 +339,12 @@ ul.blog-post-list li {
 
 ul.blog-post-list span {
     float: right;
-    color: {{ color_variant(site_settings.primary_accent_color, 30) }};
+    color: #aaa; /* color_variant(site_settings.primary_accent_color, 30) */
 }
 
 .blog-post {
     margin: 0.5rem 0;
-    border: 2px solid {{ site_settings.secondary_accent_color }};
+    border: 2px solid #eee; /* site_settings.secondary_accent_color */
     border-left: 0;
     border-right: 0;
     padding-bottom: 1rem;
@@ -372,7 +372,7 @@ ul.blog-post-list span {
 
 .blog-post .blog-post-date span {
     display: block;
-    color: {{ color_variant(site_settings.primary_accent_color, 30) }};
+    color: #aaa; /* color_variant(site_settings.primary_accent_color, 30) */
     margin-top: -1rem;
     font-size: .6rem;
     display: inline-block;
@@ -485,7 +485,7 @@ body .hsformerror .close-form-error {
 }
 
 .about-container {
-    background: {{ site_settings.secondary_accent_color }};
+    background: #eee; /* site_settings.secondary_accent_color */
     padding: .1rem .75rem;
     margin-top: 1rem;
 }

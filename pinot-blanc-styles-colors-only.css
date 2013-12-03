@@ -1,0 +1,29 @@
+body {
+    color: {{ site_settings.primary_font_color }};
+}
+
+.hs-button.primary,
+.hs-button.primary:hover, .hs-button.primary:active,
+.page-container.colored-stripe {
+    background: {{ site_settings.primary_accent_color }};
+}
+
+.widget-type-post_listing a:visited,
+.widget-type-post_filter a:visited,
+.blog-post-list a:visited,
+ul.blog-post-list span {
+    color: {{ color_variant(site_settings.primary_accent_color, 30) }};
+}
+
+.blog-post {
+    border-top: 2px solid {{ site_settings.secondary_accent_color }};
+    border-bottom: 2px solid {{ site_settings.secondary_accent_color }};
+}
+
+.blog-post .blog-post-date span {
+    color: {{ color_variant(site_settings.primary_accent_color, 30) }};
+}
+
+.about-container {
+    background: {{ site_settings.secondary_accent_color }};
+}
