@@ -12,6 +12,12 @@ By Flynn ＆ Co.
 {% include "hubspot/styles/responsive/required_base.css" %}
 {% include "hubspot/styles/patches/recommended.css" %}
 
+/* Overrides */
+
+.row-fluid [class*="span"] {
+    min-height: 0;
+}
+
 /* Globals */
 
 *, *:after, *:before {
